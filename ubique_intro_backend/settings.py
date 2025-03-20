@@ -174,7 +174,8 @@ CORS_ALLOWED_ORIGINS = [
 "https://54.211.231.82",
 "http://172.31.30.176",
 "https://172.31.30.176",
-    "http://dotnetorg.com",
-    "https://dotnetorg.com",
-    "https://ubique-intro-frontend.onrender.com",
+"http://dotnetorg.com",
+"https://dotnetorg.com",
+"https://ubique-intro-frontend.onrender.com/",
+"http://ubique-intro-frontend.onrender.com/",
 ]
