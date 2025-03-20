@@ -14,7 +14,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 from datetime import timedelta
 import os
-
+import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -87,6 +88,14 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         # Replace this value with your local database's connection string.
+#         default='postgresql://dipu:oqEHRLniNqRsz03nibaLMGBmbLq572rm@dpg-cve24vl2ng1s73ccghpg-a.singapore-postgres.render.com/ubique_intro',
+#         conn_max_age=600
+#     )
+# }
 
 # DATABASES = {
 #     'default': {
@@ -165,4 +174,7 @@ CORS_ALLOWED_ORIGINS = [
 "https://54.211.231.82",
 "http://172.31.30.176",
 "https://172.31.30.176",
+    "http://dotnetorg.com",
+    "https://dotnetorg.com",
+    "https://ubique-intro-frontend.onrender.com",
 ]
