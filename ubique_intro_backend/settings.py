@@ -174,11 +174,13 @@ CORS_ALLOWED_ORIGINS = [
 "https://54.211.231.82",
 "http://172.31.30.176",
 "https://172.31.30.176",
-# "http://dotnetorg.com",
-# "https://dotnetorg.com",
+"http://dotnetorg.com",
+"https://dotnetorg.com",
 "https://ubique-intro-frontend.onrender.com",
 "http://ubique-intro-frontend.onrender.com",
 ]
 CORS_ORIGIN_WHITELIST = ( 'http://localhost:5173',
                           'http://ubique-intro-frontend.onrender.com',
-                          'https://ubique-intro-frontend.onrender.com',)
+                          'https://ubique-intro-frontend.onrender.com',
+                          'https://dotnetorg.com',
+                          'http://dotnetorg.com',)
